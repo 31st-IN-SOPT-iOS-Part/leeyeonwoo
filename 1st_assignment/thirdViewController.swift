@@ -10,7 +10,7 @@ import UIKit
 class thirdViewController: UIViewController {
     
     var name = "ddd"
-
+    
     
     private let resultLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 80, y: 200, width: 300, height: 30))
@@ -30,22 +30,14 @@ class thirdViewController: UIViewController {
         button.titleLabel?.font = .systemFont(ofSize: 15, weight: .medium)
         button.backgroundColor = .systemYellow
         button.layer.cornerRadius = 5
-        
-        button.addTarget(self, action: #selector(touchupBackButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(reButton), for: .touchUpInside)
         
         return button
     }()
     
     
-    @objc
-    func touchupBackButton() {
-        if self.navigationController == nil {
-            self.dismiss(animated: true,completion: nil)
-        }
-        else{
-            self.navigationController?.popViewController(animated: true)
-        }
-    }
+  
+    
     
     var result: String?
     
@@ -60,4 +52,9 @@ class thirdViewController: UIViewController {
         }
     }
     
+    @objc
+    func reButton(){
+            self.dismiss(animated: true,completion: nil)
+    }
+
 }

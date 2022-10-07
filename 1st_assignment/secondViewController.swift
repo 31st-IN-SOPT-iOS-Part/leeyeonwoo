@@ -21,21 +21,24 @@ class secondViewController: UIViewController {
     
     // 이메일 또는 전화번호
     private let id2TextField: UITextField = {
-        let textField = UITextField(frame: CGRect(x:80,y:280,width:250, height:40))
+        let textField = UITextField(frame: CGRect(x:80,y:250,width:250, height:40))
         textField.borderStyle = .roundedRect
         textField.font = .systemFont(ofSize:18,weight:.medium)
         textField.placeholder = "이메일 또는 전화번호"
         return textField
     }()
     
+    
     // 비밀번호
     private let paTextField: UITextField = {
-        let textField = UITextField(frame: CGRect(x:80,y:350,width:250, height:40))
+        let textField = UITextField(frame: CGRect(x:80,y:300,width:250, height:40))
         textField.borderStyle = .roundedRect
         textField.font = .systemFont(ofSize:18,weight:.medium)
         textField.placeholder = "비밀번호"
         return textField
     }()
+    
+    
     
     
     // 비밀번호 확인
@@ -64,6 +67,7 @@ class secondViewController: UIViewController {
     func nextButton(){
         let nextpage = thirdViewController()
         present(nextpage, animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
     }
    
     override func viewDidLoad() {
