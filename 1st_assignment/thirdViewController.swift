@@ -9,8 +9,9 @@ import UIKit
 
 class thirdViewController: UIViewController {
     
-    var name = "연우"
+    var name = "ddd"
 
+    
     private let resultLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 80, y: 200, width: 300, height: 30))
         
