@@ -35,7 +35,7 @@ class ProfilehomeViewController: UIViewController {
     
     let nameLabel : UILabel = {
        let name = UILabel()
-        name.text = "김솝트"
+        name.text = "박솝트"
         name.font = .systemFont(ofSize: 18)
         name.textColor = .white
         return name
