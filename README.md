@@ -1,4 +1,3 @@
-# leeyeonwoo
 
 ![IMG_1500](https://user-images.githubusercontent.com/73478057/199931303-8eb1c3fc-9f11-4dc7-b0e7-7a7969acfb9f.PNG)
 
